@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-heading: "Baloo 2", sans-serif;
+  --text-heading-md: 700 1.75rem / auto var(--font-family-heading);
+  --text-heading-sm: 700 1.12rem / auto var(--font-family-heading);
+
+  --font-family-body: "Open Sans", sans-serif;
+  --text-body-md: 400 1rem / auto var(--font-family-body);
+  --text-body-sm: 400 0.87rem / auto var(--font-family-body);
+  --text-body-xs: 400 0.75rem / auto var(--font-family-body);
+
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+
+  --danger: #ff5959;
+
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+
+  --shape-bg: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+}
+
+body {
+  overflow: hidden;
+
+  font: var(--text-body-md);
+  color: var(--text-body);
+}
+
+h1 {
+  font: var(--text-heading-md);
+  color: var(--text-heading);
+}
+
+h2 {
+  font: var(--text-heading-sm);
+  color: var(--text-heading);
+}
