@@ -6,13 +6,13 @@
 
 :root {
   --font-family-heading: "Baloo 2", sans-serif;
-  --text-heading-md: 700 1.75rem/100% var(--font-family-heading);
-  --text-heading-sm: 700 1.12rem/100% var(--font-family-heading);
+  --text-heading-md: 700 1.75rem/1.61 var(--font-family-heading);
+  --text-heading-sm: 700 1.12rem var(--font-family-heading);
 
   --font-family-body: "Open Sans", sans-serif;
-  --text-body-md: 400 1rem/100% var(--font-family-body);
-  --text-body-sm: 400 0.87rem/100% var(--font-family-body);
-  --text-body-xs: 400 0.75rem/100% var(--font-family-body);
+  --text-body-md: 400 1rem/1.38 var(--font-family-body);
+  --text-body-sm: 400 0.87rem var(--font-family-body);
+  --text-body-xs: 400 0.75rem var(--font-family-body);
 
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
@@ -22,6 +22,7 @@
   --brand-dark: #1d6fb6;
 
   --danger: #ff5959;
+  --pink: #ff598b;
 
   --input-base: #1c1f21;
   --input-stroke: #363b40;
@@ -40,12 +41,7 @@ body {
   background-color: var(--shape-body);
 }
 
-h1 {
-  font: var(--text-heading-md);
-  color: var(--text-heading);
-}
-
 h2 {
-  font: var(--text-heading-sm);
+  font: var(--text-heading-md);
   color: var(--text-heading);
 }
