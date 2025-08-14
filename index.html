@@ -57,40 +57,42 @@
                   />
                 </div>
               </div>
-              <div class="input-wrapper">
-                <label>Type</label>
-                <div class="radio-wrapper">
-                  <div class="radio-inner">
-                    <input
-                      type="radio"
-                      name="event-type"
-                      id="in-person"
-                      value="in-person"
-                    />
-                    <div id="in-person-image"></div>
-                    <label for="in-person">In person</label>
-                  </div>
-                  <div class="radio-inner">
-                    <input
-                      type="radio"
-                      name="event-type"
-                      id="online"
-                      value="online"
-                    />
-                    <div id="online-image"></div>
-                    <label for="online">Online</label>
+              <div class="grid-2col">
+                <div class="input-wrapper">
+                  <label>Type</label>
+                  <div class="radio-wrapper">
+                    <div class="radio-inner">
+                      <input
+                        type="radio"
+                        name="event-type"
+                        id="in-person"
+                        value="in-person"
+                        checked
+                      />
+                      <div id="in-person-image"></div>
+                      <label for="in-person">In person</label>
+                    </div>
+                    <div class="radio-inner">
+                      <input
+                        type="radio"
+                        name="event-type"
+                        id="online"
+                        value="online"
+                      />
+                      <div id="online-image"></div>
+                      <label for="online">Online</label>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="input-wrapper">
-                <label for="event-local">Local</label>
-                <input
-                  type="text"
-                  name="event-local"
-                  id="event-local"
-                  placeholder="Link or address"
-                  required
-                />
+                <div class="input-wrapper">
+                  <label for="event-local">Local</label>
+                  <input
+                    type="text"
+                    name="event-local"
+                    id="event-local"
+                    placeholder="Link or address"
+                  />
+                </div>
               </div>
             </fieldset>
           </form>

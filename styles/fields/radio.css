@@ -1,0 +1,54 @@
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  height: 3rem;
+  padding: 0.25rem;
+}
+
+.radio-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+
+  & input {
+    all: unset;
+  }
+
+  & label {
+    margin-bottom: 0;
+  }
+
+  & #in-person-image {
+    background-image: url(../../assets/icons/building.svg);
+    width: 1rem;
+    height: 1rem;
+  }
+
+  & #online-image {
+    background-image: url(../../assets/icons/video.svg);
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &:has(:checked) {
+    background-color: var(--shape-button);
+    border-radius: 0.25rem;
+
+    & #in-person-image {
+      background-image: url(../../assets/icons/building-selected.svg);
+    }
+
+    & #online-image {
+      background-image: url(../../assets/icons/video-selected.svg);
+    }
+
+    & label {
+      font-weight: 600;
+      color: var(--text-heading);
+    }
+  }
+}

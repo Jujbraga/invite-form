@@ -1,5 +1,6 @@
 input,
-textarea {
+textarea,
+.radio-wrapper {
   appearance: none;
   width: 100%;
   padding: 0.75rem 1rem;
