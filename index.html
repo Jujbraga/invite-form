@@ -27,7 +27,7 @@
           <form action="" method="post" enctype="multipart/form-data">
             <fieldset class="event-info">
               <div class="flex">
-                <img src="" alt="" />
+                <img src="assets/icons/calender.svg" alt="Calender icon" />
                 <legend>About the event</legend>
               </div>
               <div class="input-wrapper">
@@ -39,17 +39,23 @@
                   placeholder="Event name"
                 />
               </div>
-              <div class="input-wrapper">
-                <label for="event-start">Start</label>
-                <input
-                  type="datetime-local"
-                  name="event-start"
-                  id="event-start"
-                />
-              </div>
-              <div class="input-wrapper">
-                <label for="event-end">End</label>
-                <input type="datetime-local" name="event-end" id="event-end" />
+              <div class="grid-2col">
+                <div class="input-wrapper">
+                  <label for="event-start">Start</label>
+                  <input
+                    type="datetime-local"
+                    name="event-start"
+                    id="event-start"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="event-end">End</label>
+                  <input
+                    type="datetime-local"
+                    name="event-end"
+                    id="event-end"
+                  />
+                </div>
               </div>
               <div class="input-wrapper">
                 <label>Type</label>
@@ -83,6 +89,7 @@
                   name="event-local"
                   id="event-local"
                   placeholder="Link or address"
+                  required
                 />
               </div>
             </fieldset>
