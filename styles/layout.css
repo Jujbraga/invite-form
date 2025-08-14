@@ -1,0 +1,10 @@
+#app {
+  display: grid;
+  grid-template-columns: 33.87% 66.13%;
+  height: 100%;
+}
+
+aside {
+  background-image: url(../assets/background.png);
+  padding: 2rem;
+}

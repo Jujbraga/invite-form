@@ -14,8 +14,81 @@
   </head>
   <body>
     <div id="app">
-      <aside></aside>
-      <main></main>
+      <aside>
+        <div class="aside-container">
+          <img src="assets/logo.svg" alt="Festivite logo" />
+          <h1 class="logo">Festivite</h1>
+          <p>Create a digital invitation for your event</p>
+        </div>
+      </aside>
+      <main>
+        <div class="main-container">
+          <h2>Create your invitation</h2>
+          <form action="" method="post" enctype="multipart/form-data">
+            <fieldset class="event-info">
+              <div class="flex">
+                <img src="" alt="" />
+                <legend>About the event</legend>
+              </div>
+              <div class="input-wrapper">
+                <label for="event-title">Title</label>
+                <input
+                  type="text"
+                  name="event-title"
+                  id="event-title"
+                  placeholder="Event name"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="event-start">Start</label>
+                <input
+                  type="datetime-local"
+                  name="event-start"
+                  id="event-start"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="event-end">End</label>
+                <input type="datetime-local" name="event-end" id="event-end" />
+              </div>
+              <div class="input-wrapper">
+                <label>Type</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="event-type"
+                      id="in-person"
+                      value="in-person"
+                    />
+                    <div id="in-person-image"></div>
+                    <label for="in-person">In person</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="event-type"
+                      id="online"
+                      value="online"
+                    />
+                    <div id="online-image"></div>
+                    <label for="online">Online</label>
+                  </div>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="event-local">Local</label>
+                <input
+                  type="text"
+                  name="event-local"
+                  id="event-local"
+                  placeholder="Link or address"
+                />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
     </div>
   </body>
 </html>
