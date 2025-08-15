@@ -13,3 +13,7 @@ fieldset {
 legend {
   font: var(--text-heading-sm);
 }
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
