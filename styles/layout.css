@@ -29,7 +29,7 @@ main {
   overflow: auto;
 
   & .main-container {
-    padding-top: 5rem;
+    padding-block: 5rem;
     max-width: 35rem;
     margin-inline: auto;
   }

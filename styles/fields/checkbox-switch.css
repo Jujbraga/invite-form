@@ -1,0 +1,63 @@
+.switch-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  & [type="checkbox"] {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    width: 4rem;
+    height: 2rem;
+    inset: 0;
+  }
+
+  label {
+    margin: 0;
+  }
+
+  .switch {
+    cursor: pointer;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 999px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .switch::before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    top: calc(50% - 1.5rem / 2);
+    left: 0.25rem;
+    border-radius: 50%;
+    background-color: var(--input-stroke);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  label::after {
+    content: "Dark";
+  }
+
+  &:has(:checked) {
+    .switch {
+      background-color: var(--brand-light);
+    }
+    label::after {
+      content: "Light";
+    }
+  }
+
+  input:checked + .switch:before {
+    background-color: var(--text-heading);
+    -webkit-transform: translateX(1.87rem);
+    -ms-transform: translateX(1.87rem);
+    transform: translateX(1.87rem);
+  }
+}
