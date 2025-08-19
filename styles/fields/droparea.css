@@ -1,0 +1,37 @@
+.droparea-wrapper {
+  /* position: relative; */
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  & input {
+    all: unset;
+    width: 100%;
+    color: var(--input-placeholder);
+  }
+
+  & [type="file"]::file-selector-button {
+    display: none;
+  }
+
+  & label {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: var(--shape-button);
+    font: var(--text-body-sm);
+    height: 100%;
+    padding-inline: 1.75rem;
+
+    & img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
