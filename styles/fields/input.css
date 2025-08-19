@@ -30,3 +30,24 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 textarea {
   resize: none;
 }
+
+input[required] {
+  &:invalid {
+    border-color: var(--danger);
+  }
+
+  & + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font: var(--text-body-xs);
+    color: var(--danger);
+    margin-top: 0.5rem;
+
+    &::before {
+      content: "Required field";
+      padding-left: 1.5rem;
+      background: url(../../assets/icons/alert.svg) no-repeat left/contain;
+    }
+  }
+}
