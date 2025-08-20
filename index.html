@@ -360,10 +360,7 @@
                   placeholder="Full name"
                   required
                 />
-                <div class="error">
-                  <!-- <img src="assets/icons/alert.svg" alt="Alert circle icon" />
-                  <span>Required field</span> -->
-                </div>
+                <div class="error"></div>
               </div>
               <div class="grid-2col">
                 <div class="input-wrapper">
@@ -386,7 +383,40 @@
                 </div>
               </div>
             </fieldset>
-            <button type="submit">Send</button>
+            <fieldset>
+              <div class="terms-wrapper">
+                <div class="terms-inner">
+                  <div class="checkbox-img"></div>
+                  <input type="checkbox" name="terms" id="terms" />
+                  <label for="terms">
+                    I have read and agree to the
+                    <a href="#">Terms and Conditions</a> and
+                    <a href="#">Privacy Policy</a>.
+                  </label>
+                </div>
+                <div class="terms-inner">
+                  <div class="checkbox-img"></div>
+                  <input
+                    type="checkbox"
+                    name="updates-email"
+                    id="updates-email"
+                  />
+                  <label for="updates-email">
+                    I agree to receive updates and promotions by email.
+                  </label>
+                </div>
+                <div class="terms-inner">
+                  <div class="checkbox-img"></div>
+                  <input type="checkbox" name="updates-sms" id="updates-sms" />
+                  <label for="updates-sms">
+                    I agree to receive updates and promotions by SMS.
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="btn-wrapper">
+              <button type="submit">Send</button>
+            </div>
           </form>
         </div>
       </main>
